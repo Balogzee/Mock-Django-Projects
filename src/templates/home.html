@@ -9,17 +9,20 @@
 </head>
 
 <body>
-    <p>
-        Hi, i like {{food}}
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eius facilis iure magnam, officiis dignissimos.
-        Aliquid laboriosam dolorem veritatis laborum vitae harum quod quasi amet quam. Sapiente, error dolor? Dolores.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequuntur deleniti obcaecati minus officiis, eius
-        recusandae magnam quisquam adipisci soluta distinctio quaerat nam, ipsa quis aliquam ad eum aperiam et?
-    </p>
+    {%if book_author%}
+        <p>
+            Hi
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eius facilis iure magnam, officiis dignissimos.
+            Aliquid laboriosam dolorem veritatis laborum vitae harum quod quasi amet quam. Sapiente, error dolor? Dolores.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequuntur deleniti obcaecati minus officiis, eius
+            recusandae magnam quisquam adipisci soluta distinctio quaerat nam, ipsa quis aliquam ad eum aperiam et?
+        </p>
+    {% endif %}
+    
 </body>
 
 </html>

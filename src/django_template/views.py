@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from .models import BookStore
 
 # Create your views here.
 def home_view(request):
-    food = "Bread"
+    book = BookStore.objects.get(year_published=2022)
+    book_author = BookStore.objects.get(book_author="Me")
     return render(
         request,
         "home.html",
-        {"food":food}
+        {"book":book},
+        {"book_author":book_author}
     )
