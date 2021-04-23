@@ -1,2 +1,2 @@
 # Mock-Django-Projects
-Mock projects on zuri
+Mock projects on zuri internship
